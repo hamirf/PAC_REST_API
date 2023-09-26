@@ -7,7 +7,7 @@ namespace PAC_Map_Combiner_REST_API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class MapCombinerController : Controller
+public class MapCombinerController : ControllerBase
 {
     private readonly IMapService _mapService;
     

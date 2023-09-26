@@ -1,0 +1,22 @@
+26/09/2023
+- Change Map Combiner API Logic
+
+-- Before: 
+--- Uploaded xml(s) have to be downloaded first
+--- Read xml(s) and deserialize all into List of object
+--- Combine list of object --In this case is map-- to an object (Validation included)
+--- Serialize the object into an xml
+
+-- After:
+--- Read each uploaded xml(s) when submitted and deserialize all into list of object (Not downloaded)
+--- Combine list of object --In this case is map-- to an object (Validation included)
+--- Serialize the object into an xml
+
+- Add HTTP Status Code
+-- Return HTTP Status Code 200 if successfully using GetMap API
+-- Return HTTP Status Code 404 if fail to found the file when using GetMap API
+
+-- Return HTTP Status Code 200 if successfully upload files using CombineMap API
+-- Return HTTP Status Code 400 if fail to upload files when using CombineMap API, with some specific error message
+--- Error if there's no single file uploaded
+--- Error if files extension are not xml 
