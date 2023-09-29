@@ -20,3 +20,43 @@
 -- Return HTTP Status Code 400 if fail to upload files when using CombineMap API, with some specific error message
 --- Error if there's no single file uploaded
 --- Error if files extension are not xml 
+
+27/09/2023
+New task : Save xml by path in config.json
+- Change API Output
+
+-- Before:
+--- Output just contain data (Either it's object or response message)
+
+-- After:
+--- Output as default HTTP response, instead of DIY response
+
+- Change file path output
+
+-- Before:
+--- Path get from code file
+
+-- After:
+--- Path get from config.json file
+
+29/09/2023
+- Yesterday task Done
+
+-- Before:
+--- Path get from code file
+
+-- After:
+--- Path get from config.json file
+
+- Change CombineMap API output
+
+-- Before:
+--- Output is a string
+
+-- After: 
+--- Output is a CombineMapStatus class
+--- Contains string of Status and string of Message properties
+
+- Refactoring methods in MapRepository, MapService and MapController class
+
+- Make code looks more readable
