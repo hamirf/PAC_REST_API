@@ -1,0 +1,27 @@
+02/10/2023
+- Change the way to get config json file for path reference
+
+-- Before:
+--- Hard coded absolute path of config json
+
+-- After:
+--- Use Directory.GetParent and Environment.CurrentDirectory combo to get to the config json
+
+- Move Map Combiner API from Pac.Manager.WebApi project to Pac.Device.Slave.WebApi
+
+-- Before:
+--- Map Combiner API included in Pac.Manager.WebApi
+
+-- After:
+--- Map Combiner API included in Pac.Device.Slave.WebApi
+
+- Change the way to get config json file for path reference
+
+-- Before:
+--- Searching for config json first, using Directory.GetParent and Environment.CurrentDirectory combo
+
+-- After:
+--- Get path of encoder config json file based on SystemConfig and DeviceSlaveConfig xml
+
+What can we learn today:
+- Make path or any credential more secure, with place it in xml or other file instead of hard coded in program
