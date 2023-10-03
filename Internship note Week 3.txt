@@ -25,3 +25,14 @@
 
 What can we learn today:
 - Make path or any credential more secure, with place it in xml or other file instead of hard coded in program
+
+03/10/2023
+- Add xml documentation for some methods and constructors
+
+-- Before:
+--- No xml documentation for methods and constructors
+
+-- After:
+--- Add xml documentation except in MapCombinerController
+
+04/10/2023
