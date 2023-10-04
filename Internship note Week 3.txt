@@ -36,3 +36,19 @@ What can we learn today:
 --- Add xml documentation except in MapCombinerController
 
 04/10/2023
+- Change encoder file path
+
+-- Before:
+--- Combination of Config path + NativeConfig path
+
+-- After:
+--- Just from NativeConfig path of DeviceSlaveConfig xml
+--- Reason: Cause when it's been deployed, the path in the xml will made an absolute path
+
+- Create Map Combiner UI (React Js)
+
+-- Before:
+--- No UI to use Map Combiner API
+
+-- After:
+--- Create button to browse and submit files
