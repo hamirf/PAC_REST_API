@@ -52,3 +52,55 @@ What can we learn today:
 
 -- After:
 --- Create button to browse and submit files
+
+05/10/2023
+- Create Map Page foundation
+
+-- Before:
+--- No Menu for Map Page in the sidebar of the page
+
+-- After:
+--- Reveal a Map Menu in the sidebar to go to Map Page
+--- Add :
+	  - Cue and CueMap Model
+	  - Add MapCombinerApi, both GET and POST requests
+	  - MapView.tsx, MapView.css
+	  - Add MapView into App.tsx so the Map Menu appear in the sidebar of the page
+
+
+- Consume GET Request of Map Combiner API
+
+-- Before:
+--- Can't get the response from the API, with error of CORS and unknown error code
+
+-- After:
+--- Successfully retrieve data from the API, with the change of API response structure in the Backend
+
+- Map Combiner API Done
+
+-- Before:
+--- API Response structure not the same as the other that has been existed
+
+-- After:
+--- API Response structure has been same as the other that has been existed
+
+06/10/2023
+- Consume POST Request of Map Combiner API
+
+-- Before:
+--- Can't get the response from the API, due to 415 error code, unsupported media type
+
+-- After:
+--- Have the POST Request input data as a FormData object
+--- Change a bit on the sendPostRequestReturnValue logic, where if input is instanceof FormData: 
+	- Body equal to body itself (not JSON.Stringify(body))
+	- Not specify the Content-Type on the request headers
+
+
+- Change table structure of the map a lil bit
+
+-- Before:
+--- Contains CueMap properties
+
+-- After:
+--- Add row numbers
