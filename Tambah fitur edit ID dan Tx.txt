@@ -1,0 +1,7 @@
+Tambah fitur edit ID dan Tx
+-- Tambah API
+-- Edit UI di web
+
+Question:
+- ID bisa diganti? Berarti butuh proeprti baru?
+- 

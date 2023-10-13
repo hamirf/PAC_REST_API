@@ -1,0 +1,58 @@
+09/10/2023
+- Asked a question about interests in SQA (Software Quality Assurance)
+- Get some references about SQA on the internet (What is SQA, SQA Responsible, Career Path, etc)
+
+10/10/2023
+- Solve some Hackerrank Algorithm's Problem C# base
+- Ask brother Ahfa about SQA responsible specifically in Formulatrix
+
+11/10/2023
+- Solve some Hackerrank Algorithm's Problem C# base
+
+12/10/2023
+- Add API for update single coordinate of the map
+
+-- Before:
+--- Existed API are GetCombinedMap and CombineMaps
+
+-- After:
+--- Add UpdateMapById API
+---- Function: Update single coordinate (ID and Tx) of the map
+
+- Change Map Page UI a little bit
+
+-- Before:
+--- Readonly table consists of map coordinate
+
+-- After:
+--- Make ID and Tx column editable
+--- Add Save Change button in the last column (Malfunction {One change of ID or Tx make Save Change button in each coordinate row visible})
+---- Using: Save Change button whether visible or not based on onChange of ID or Tx each coordinate
+
+13/10/2023
+- Function of Save Change is now doing as it should be
+
+-- Before:
+--- One change of ID or Tx make Save Change button in each coordinate row visible
+
+-- After:
+--- Save Change button visible just within onChange coordinate 
+
+- Add API for for update multiple coordinate of the map (Batch update)
+
+-- Before:
+--- Existed API are GetCombinedMap, CombineMaps, and fresh UpdateMapById
+
+-- After:
+--- Add UpdateMapInBatch API
+---- Function: Update multiple coordinates (It's ID and Tx) of the map at once
+
+- Make changes of Map Page UI
+
+-- Before:
+--- ID and Tx column are editable
+--- Add Save Change button in the last column
+
+-- After:
+--- Add table header that consists Multiple Changes checkbox
+--- Add Save Changes button on the top of Upload File content
