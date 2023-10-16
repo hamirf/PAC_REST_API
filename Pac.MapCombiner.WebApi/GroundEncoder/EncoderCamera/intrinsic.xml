@@ -1,0 +1,23 @@
+<VisionConfig>
+<!--    <Debug level="0" path="logs/" />-->
+
+<!--    <CameraMatrix width="640" height="480">-->
+    <CameraMatrix>
+        <double>338.97486628</double>
+        <double>0</double>
+        <double>332.10472374</double>
+        <double>0</double>
+        <double>364.68622987</double>
+        <double>256.96747536</double>
+        <double>0</double>
+        <double>0</double>
+        <double>1</double>
+    </CameraMatrix>
+    <CameraDistortion>
+        <double>-0.31375918</double>
+        <double>0.04308691</double>
+        <double>-0.00589449</double>
+        <double>-0.01061783</double>
+        <double>0.0291904</double>
+    </CameraDistortion>
+</VisionConfig>

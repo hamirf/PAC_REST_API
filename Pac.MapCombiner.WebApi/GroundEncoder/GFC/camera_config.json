@@ -1,0 +1,29 @@
+{
+  "Capture": {
+    "Resolution": {
+      "Width": 640,
+      "Height": 480
+    },
+    "Brightness": 50,
+    "WhiteBalanceRed": 0,
+    "WhiteBalanceBlue": 0,
+    "FPS": 25
+  },
+  "Strobe": {
+    "Mode": "FREX_PAD",
+    "Duration": 100
+  },
+  "PWMScript":{
+	  "On": "/home/pi/Rover/Device/Motion/scripts/zzz_pwm_on_bot.py",
+	  "Off": "/home/pi/Rover/Device/Motion/scripts/zzz_pwm_off_bot.py"
+  },
+
+  "pwm_channel": 1,
+  "pwm_clock": 512,
+  "led_pow_gpio": 28,
+  "led_ctl_gpio": 24,
+  "led_enabled": true,
+  "camera_idx_number": 0,
+  "i2c_address": 54,
+  "i2c_device": "/dev/i2c-0"
+}

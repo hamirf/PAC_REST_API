@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceSlave>
+  <DeviceProxy>
+    <Simulation>true</Simulation>
+    <Driver>vcan:0:99</Driver>
+  </DeviceProxy>
+  <MotorX>
+    <ID>0</ID>
+    <Driver>vcan:0:22</Driver>
+    <Simulation>true</Simulation>
+    <DeadBand>0.1</DeadBand>
+    <MinPosition>100</MinPosition>
+    <MaxPosition>900</MaxPosition>
+    <StepPerUnit>3.6</StepPerUnit>
+    <MaxVelocity>50</MaxVelocity>
+    <Acceleration>200</Acceleration>
+    <Jerk>2000</Jerk>
+  </MotorX>
+  <GroundEncoder>
+    <NativeConfig>GroundEncoder</NativeConfig>
+  </GroundEncoder>
+</DeviceSlave>

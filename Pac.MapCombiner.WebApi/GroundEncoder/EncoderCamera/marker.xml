@@ -1,0 +1,37 @@
+<MarkerConfig>
+    <Barcode type = "WHITE">
+        <!-- TODO AKP 190807 barcode and bit params-->
+    </Barcode>
+    <BarcodeRemark>
+        Available barcode types:
+            - BLACK
+            - WHITE
+                Note: must be followed by setting Threshold type to "MASKING"
+    </BarcodeRemark>
+
+    <Debug value = "true" />
+    <DebugPath value = "/home/pi/debug_image/" />
+
+    <Threshold type = "MASKING" param1 = "mask.png" param2 = "37" />
+<!--    <Threshold type = "BINARY" param1 = "185" param2 = "" />-->
+<!--    <Threshold type = "LIAOCHENCHUNG" param1 = "" param2 = "" />-->
+<!--        <Threshold type = "ADAPTIVE" param1 = "5" param2 = "201" />-->
+<!--    <Threshold type = "OTSU" param1 = "" param2 = "" />-->
+    <ThresholdRemark>
+        Available threshold types:
+            - BINARY
+            - ADAPTIVE ( Not recommended; performance issue )
+            - LIAOCHENCHUNG
+            - MASKING
+            - OTSU
+
+        Param1:
+            - BINARY (int): binary threshold value
+            - ADAPTIVE (int): offset value
+            - MASKING (string): rover predefined *.png mask file location
+
+        Param2:
+            - ADAPTIVE (int): block size
+            - MASKING (int): offset value
+    </ThresholdRemark>
+</MarkerConfig>

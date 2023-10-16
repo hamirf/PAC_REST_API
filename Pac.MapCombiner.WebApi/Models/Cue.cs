@@ -4,6 +4,7 @@ namespace PAC_Map_Combiner_REST_API.Models;
 
 public class Cue
 {
+    [XmlIgnore] public uint CueId { get; set; }
     [XmlAttribute] public uint ID { get; set; }
     [XmlAttribute] public int Rx { get; set; }
     [XmlAttribute] public int Ry { get; set; }

@@ -9,7 +9,7 @@ public class CueMap
     [XmlElement( "Cue" )] public List<Cue>? Items { get; set; }
     public CueMap() { }
 
-    public CueMap(List<Cue> items)
+    public CueMap( List<Cue> items )
     {
         Items = items;
         Len = items.Count;

@@ -1,0 +1,7 @@
+{
+  "pathMarker": "/home/pi/kerja/rover-device-develop/app/config/Odometry/marker.xml",
+  "pathIntrinsic": "/home/pi/kerja/rover-device-develop/app/config/Odometry/intrinsic.xml",
+  "pathMap": "/home/pi/kerja/rover-device-develop/app/config/Odometry/map.xml",
+  "idle_frame_skip": 30,
+  "pathDebugImage": "/home/pi/debug_image"
+}

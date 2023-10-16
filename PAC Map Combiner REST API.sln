@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAC_Map_Combiner_REST_API", "PAC_Map_Combiner_REST_API\PAC_Map_Combiner_REST_API.csproj", "{12BF1383-DB30-4D23-830F-25780EBE36AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pac.MapCombiner.WebApi", "Pac.MapCombiner.WebApi\Pac.MapCombiner.WebApi.csproj", "{12BF1383-DB30-4D23-830F-25780EBE36AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
