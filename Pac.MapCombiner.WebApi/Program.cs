@@ -1,3 +1,4 @@
+using System.Reflection;
 using PAC_Map_Combiner_REST_API.Repositories;
 using PAC_Map_Combiner_REST_API.Services;
 
@@ -10,7 +11,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IMapRepository, MapRepository>();
+var rootPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
+rootPath = rootPath != null ? rootPath.Replace(rootPath.Substring(rootPath.LastIndexOf(@"bin\")), string.Empty) : throw new NullReferenceException();
+
+var mapRepository = new MapRepository(Path.Combine(rootPath, "GroundEncoder"));
+builder.Services.AddSingleton<IMapRepository>( mapRepository );
 builder.Services.AddSingleton<IMapService, MapService>();
 
 var app = builder.Build();

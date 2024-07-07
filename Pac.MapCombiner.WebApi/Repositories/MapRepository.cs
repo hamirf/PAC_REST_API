@@ -123,8 +123,8 @@ public class MapRepository : IMapRepository
     /// <param name="mapPath">A file path destination for the map</param>
     private static void CreateMapDirectory( string mapPath )
     {
-      string? directory = Path.GetDirectoryName( mapPath );
-      Directory.CreateDirectory( directory ?? String.Empty );
+      /*string? directory = Path.GetDirectoryName( mapPath );*/
+      File.WriteAllLines(mapPath, new List<string>());
     }
 
     // CombineMap Support Methods
